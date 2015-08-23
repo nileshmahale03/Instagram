@@ -41,7 +41,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [DataSource sharedInstance].mediaItems.count;
+    
+    return [self items].count;
+    
 }
 
 // override the table view controller's initializer to create an empty array
@@ -84,7 +86,7 @@
         [cell.contentView addSubview:imageView];
     }
     
-    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    Media *item = [self items][indexPath.row];
     imageView.image = item.image;
     
     return cell;
@@ -92,10 +94,14 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    Media *item = [DataSource sharedInstance].mediaItems[indexPath.row];
+    Media *item = [self items][indexPath.row];
     UIImage *image = item.image;
     
     return (CGRectGetWidth(self.view.frame)/ image.size.width) * image.size.height;
+}
+
+- (NSArray *)items {
+    return [DataSource sharedInstance].mediaItems;
 }
 
 /*
