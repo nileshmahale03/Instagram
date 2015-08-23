@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27DCD97D1B892F000003DB41 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD97C1B892F000003DB41 /* User.m */; };
+		27DCD9801B892FD40003DB41 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD97F1B892FD40003DB41 /* Media.m */; };
+		27DCD9831B8931590003DB41 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD9821B8931590003DB41 /* Comment.m */; };
+		27DCD9861B8932FB0003DB41 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD9851B8932FB0003DB41 /* DataSource.m */; };
 		27DD0FA91B82DDCA008A3094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD0FA81B82DDCA008A3094 /* main.m */; };
 		27DD0FAC1B82DDCA008A3094 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD0FAB1B82DDCA008A3094 /* AppDelegate.m */; };
 		27DD0FB41B82DDCA008A3094 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD0FB31B82DDCA008A3094 /* Images.xcassets */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27DCD97B1B892F000003DB41 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		27DCD97C1B892F000003DB41 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		27DCD97E1B892FD40003DB41 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		27DCD97F1B892FD40003DB41 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		27DCD9811B8931590003DB41 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		27DCD9821B8931590003DB41 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		27DCD9841B8932FB0003DB41 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		27DCD9851B8932FB0003DB41 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		27DD0FA31B82DDCA008A3094 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD0FA71B82DDCA008A3094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DD0FA81B82DDCA008A3094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +119,14 @@
 				27DD0FB31B82DDCA008A3094 /* Images.xcassets */,
 				27DD0FB51B82DDCA008A3094 /* LaunchScreen.xib */,
 				27DD0FA61B82DDCA008A3094 /* Supporting Files */,
+				27DCD97B1B892F000003DB41 /* User.h */,
+				27DCD97C1B892F000003DB41 /* User.m */,
+				27DCD97E1B892FD40003DB41 /* Media.h */,
+				27DCD97F1B892FD40003DB41 /* Media.m */,
+				27DCD9811B8931590003DB41 /* Comment.h */,
+				27DCD9821B8931590003DB41 /* Comment.m */,
+				27DCD9841B8932FB0003DB41 /* DataSource.h */,
+				27DCD9851B8932FB0003DB41 /* DataSource.m */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -263,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DCD97D1B892F000003DB41 /* User.m in Sources */,
+				27DCD9831B8931590003DB41 /* Comment.m in Sources */,
+				27DCD9801B892FD40003DB41 /* Media.m in Sources */,
 				27DD0FAC1B82DDCA008A3094 /* AppDelegate.m in Sources */,
+				27DCD9861B8932FB0003DB41 /* DataSource.m in Sources */,
 				27DD0FA91B82DDCA008A3094 /* main.m in Sources */,
 				27DD0FE31B82E1B0008A3094 /* ImagesTableViewController.m in Sources */,
 			);
@@ -454,6 +478,7 @@
 				27DD0FC81B82DDCA008A3094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27DD0FC91B82DDCA008A3094 /* Build configuration list for PBXNativeTarget "InstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +487,7 @@
 				27DD0FCB1B82DDCA008A3094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
