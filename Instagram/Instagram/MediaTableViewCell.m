@@ -110,13 +110,28 @@ static NSParagraphStyle *paragraphStyle;
 - (NSAttributedString *) commentString {
     NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] init];
     
-    for (Comment *comment in self.mediaItem.comments) {
+    //NSLog(@"%d", self.mediaItem.comments.count);
+    
+    for (int i =0; i < self.mediaItem.comments.count; i++) {
+        Comment *comment = self.mediaItem.comments[i];
+   // for (Comment *comment in self.mediaItem.comments) {
+        
+        if (i == 0) {
+       // if (self.mediaItem.comments) {
+            commentLabelGray = [UIColor orangeColor];
+
+        } else {
+            commentLabelGray = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1];
+        }
+        
         // Make a string that says "username comment" followed by a line break
         NSString *baseString = [NSString stringWithFormat:@"%@ %@\n", comment.from.userName, comment.text];
         
+        //NSLog(@"%@", baseString);
+        
         // Make an attributed string, with the "username" bold
         
-        NSMutableAttributedString *oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle}];
+        NSMutableAttributedString *oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle, NSBackgroundColorAttributeName:commentLabelGray}];
         
         NSRange usernameRange = [baseString rangeOfString:comment.from.userName];
         [oneCommentString addAttribute:NSFontAttributeName value:boldFont range:usernameRange];
