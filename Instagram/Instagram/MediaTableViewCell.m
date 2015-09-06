@@ -109,9 +109,7 @@ static NSParagraphStyle *paragraphStyle;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    [super setSelected:NO animated:animated];
 }
 
 - (NSAttributedString *) usernameAndCaptionString {
@@ -151,7 +149,6 @@ static NSParagraphStyle *paragraphStyle;
     }
     return commentString;
 }
-
 
 
 - (void) layoutSubviews {
