@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275DAB611B9CE6EE004A220F /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275DAB601B9CE6EE004A220F /* MediaFullScreenViewController.m */; };
 		27DCD97D1B892F000003DB41 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD97C1B892F000003DB41 /* User.m */; };
 		27DCD9801B892FD40003DB41 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD97F1B892FD40003DB41 /* Media.m */; };
 		27DCD9831B8931590003DB41 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD9821B8931590003DB41 /* Comment.m */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		2491DFD0F33CD1FA526341F8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		275DAB5F1B9CE6EE004A220F /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		275DAB601B9CE6EE004A220F /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		27DCD97B1B892F000003DB41 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		27DCD97C1B892F000003DB41 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		27DCD97E1B892FD40003DB41 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				27DCD9851B8932FB0003DB41 /* DataSource.m */,
 				27DCD9871B8981B60003DB41 /* MediaTableViewCell.h */,
 				27DCD9881B8981B60003DB41 /* MediaTableViewCell.m */,
+				275DAB5F1B9CE6EE004A220F /* MediaFullScreenViewController.h */,
+				275DAB601B9CE6EE004A220F /* MediaFullScreenViewController.m */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275DAB611B9CE6EE004A220F /* MediaFullScreenViewController.m in Sources */,
 				27DCD97D1B892F000003DB41 /* User.m in Sources */,
 				27DCD9831B8931590003DB41 /* Comment.m in Sources */,
 				27DCD9891B8981B60003DB41 /* MediaTableViewCell.m in Sources */,
