@@ -314,6 +314,7 @@
 				TargetAttributes = {
 					27DD0FA21B82DDCA008A3094 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = QH652MJ3PW;
 					};
 					27DD0FBB1B82DDCA008A3094 = {
 						CreatedOnToolsVersion = 6.4;
@@ -547,9 +548,12 @@
 			baseConfigurationReference = 2491DFD0F33CD1FA526341F8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -558,9 +562,12 @@
 			baseConfigurationReference = 631EBB4AB2701C723BAEC449 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
